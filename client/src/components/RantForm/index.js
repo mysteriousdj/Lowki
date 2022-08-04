@@ -12,27 +12,8 @@ const RantForm = () => {
 
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addRant, { error }] = useMutation(ADD_RANT, {
-    update(cache, { data: { addRant } }) {
-      try {
-        const { rants } = cache.readQuery({ query: QUERY_RANTS });
-
-        cache.writeQuery({
-          query: QUERY_RANTS,
-          data: { rants: [addRant, ...rants] },
-        });
-      } catch (e) {
-        console.error(e);
-      }
-
-      // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, rants: [...me.rants, addRant] } },
-      });
-    },
-  });
+  const [addRant, { error }] = useMutation(ADD_RANT);
+    
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -46,6 +27,7 @@ const RantForm = () => {
       });
 
       setRantText('');
+      window.location.reload();
     } catch (err) {
       console.error(err);
     }
@@ -62,7 +44,7 @@ const RantForm = () => {
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3>Frustrated? Spill the Tea!</h3>
 
       {Auth.loggedIn() ? (
         <>
