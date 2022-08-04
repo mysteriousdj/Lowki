@@ -16,6 +16,8 @@ const Footer = () => {
           </button>
         )}
         <h4>
+        
+
           Made with{' '}
           <span
             className="emoji"
@@ -23,10 +25,11 @@ const Footer = () => {
             aria-label="heart"
             aria-hidden="false"
           >
-            ❤️
+            🗣️
           </span>{' '}
-          by the Tech Rants team.
+          by the Lowki team.
         </h4>
+        <h5>&copy; Copyright 2022 </h5>
       </div>
     </footer>
   );
