@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
+
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -18,14 +20,16 @@ const Login = (props) => {
       [name]: value,
     });
   };
-
+const onChange = (value) => {
+  console.log(value);
+}
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
     try {
       const { data } = await login({
-        variables: { ...formState },
+        variables: { ...formState }, 
       });
 
       Auth.login(data.login.token);
@@ -69,6 +73,10 @@ const Login = (props) => {
                   value={formState.password}
                   onChange={handleChange}
                 />
+                 <ReCAPTCHA
+                  sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
+                  onChange={onChange}
+                   />
                 <button
                   className="btn btn-block btn-primary"
                   style={{ cursor: 'pointer' }}

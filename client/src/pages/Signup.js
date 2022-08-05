@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from 'react-router-dom';
 
 import { useMutation } from '@apollo/client';
@@ -13,6 +14,7 @@ const Signup = () => {
     password: '',
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
+  
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -22,7 +24,11 @@ const Signup = () => {
       [name]: value,
     });
   };
-
+  /////////////////////////////////////
+  const onChange = (value) => {
+    console.log(value);
+  }
+//////////////////////////////////
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
@@ -75,6 +81,10 @@ const Signup = () => {
                   value={formState.password}
                   onChange={handleChange}
                 />
+                 <ReCAPTCHA
+                  sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
+                  onChange={onChange}
+                   />
                 <button
                   className="btn btn-block btn-primary"
                   style={{ cursor: 'pointer' }}
