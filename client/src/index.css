@@ -423,7 +423,7 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: #FFBA08;
   text-decoration: none;
 }
 
@@ -915,7 +915,7 @@ a:hover {
 }
 
 .text-link {
-  color: #1b89bc !important;
+  color: #FFBA08 !important;
 }
 
 /* BACKGROUND UTILS */
@@ -948,7 +948,7 @@ a:hover {
 }
 
 .bg-link {
-  background-color: #1b89bc !important;
+  background-color: #FFBA08 !important;
 }
 
 /* DISPLAY */
@@ -1012,16 +1012,16 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: #FAA307;
   color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #ffba08;
 }
 
 .btn.btn-danger {
-  background-color: #e64c66;
+  background-color: #e75d74;
   color: #ffffff;
 }
 
@@ -1044,7 +1044,7 @@ a:hover {
 }
 
 .btn.btn-light:hover {
-  background-color: #84b8b4;
+  background-color: #FAA307;
 }
 
 .btn.btn-dark {
@@ -1075,7 +1075,7 @@ a:hover {
 }
 
 .btn.btn-link {
-  background-color: #1b89bc;
+  background-color: #FFBA08;
   color: #ffffff;
 }
 
