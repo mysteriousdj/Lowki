@@ -43,7 +43,7 @@ const RantList = ({
               className="btn btn-primary btn-block btn-squared"
               to={`/rants/${rant._id}`}
             >
-              Join the discussion on this rant.
+              Comment
             </Link>
           </div>
         ))}

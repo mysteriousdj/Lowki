@@ -9,6 +9,9 @@ import Auth from '../utils/auth';
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
+  const [isAuthenticated, setIsAuthenticated] = useState(null);
+
+
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
@@ -20,16 +23,22 @@ const Login = (props) => {
       [name]: value,
     });
   };
-const onChange = (value) => {
-  console.log(value);
-}
+  const onChange = (value) => {
+    console.log(value);
+    if (value !== null) {
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(null);
+    }
+
+  }
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
     try {
       const { data } = await login({
-        variables: { ...formState }, 
+        variables: { ...formState },
       });
 
       Auth.login(data.login.token);
@@ -73,17 +82,17 @@ const onChange = (value) => {
                   value={formState.password}
                   onChange={handleChange}
                 />
-                 <ReCAPTCHA
+                <ReCAPTCHA
                   sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
                   onChange={onChange}
-                   />
-                <button
+                />
+                {isAuthenticated && <button
                   className="btn btn-block btn-primary"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
                   Submit
-                </button>
+                </button>}
               </form>
             )}
 
