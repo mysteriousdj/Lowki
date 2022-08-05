@@ -14,6 +14,7 @@ const Signup = () => {
     password: '',
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
+  const [isAuthenticated, setIsAuthenticated] = useState(null);
   
 
   const handleChange = (event) => {
@@ -27,6 +28,11 @@ const Signup = () => {
   /////////////////////////////////////
   const onChange = (value) => {
     console.log(value);
+    if (value !== null) {
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(null);
+    }
   }
 //////////////////////////////////
   const handleFormSubmit = async (event) => {
@@ -85,13 +91,13 @@ const Signup = () => {
                   sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
                   onChange={onChange}
                    />
-                <button
+                {isAuthenticated && <button
                   className="btn btn-block btn-primary"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
                   Submit
-                </button>
+                </button>}
               </form>
             )}
 
