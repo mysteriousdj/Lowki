@@ -39,10 +39,17 @@ const RantList = ({
             <div className="card-body bg-light p-2">
               <p>{rant.rantText}</p>
             </div>
-            <section className='d-flex flex-row justify-content-around w-100'>
-              <div style={{ margin: "5px"}}>
-                <i className='fa-regular fa-thumbs-down'></i>
-                <i className='fa-solid fa-thumbs-up'></i>
+            <section className='d-flex flex-row' style={{justifyContent: "space-between"}}>
+              <div>
+                <button>
+                  <i className='fa-regular fa-thumbs-down m-2'></i>
+                </button>
+                <button>
+                  <i className='fa-solid fa-thumbs-up m-2'></i>
+                </button>
+                  
+                
+                
               </div>
 
             <Link
