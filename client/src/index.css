@@ -1,10 +1,25 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+::-webkit-scrollbar{
+  width:1.5em
+}
+
+::-webkit-scrollbar-track{
+ background: rgb(0, 0, 0);
+
+ margin-block: .1em;
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgb(251, 1, 1);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:rgb(165, 0, 0) ;
+}
+
+
+
+
 html {
   line-height: 1.15;
   /* 1 */
