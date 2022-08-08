@@ -21,6 +21,7 @@ export const QUERY_RANTS = gql`
       _id
       rantText
       rantAuthor
+      company
       createdAt
     }
   }
@@ -32,6 +33,7 @@ export const QUERY_SINGLE_RANT = gql`
       _id
       rantText
       rantAuthor
+      company
       createdAt
       comments {
         _id

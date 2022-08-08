@@ -13,6 +13,7 @@ const typeDefs = gql`
     _id: ID
     rantText: String
     rantAuthor: String
+    company: String
     createdAt: String
     comments: [Comment]!
   }
@@ -33,7 +34,7 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     rants(username: String): [Rant]
-    rant(RantId: ID!): Rant
+    rant(rantId: ID!): Rant
     me: User
   }
 

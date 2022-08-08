@@ -21,11 +21,16 @@ const RantList = ({
               {showUsername ? (
                 <Link
                   className="text-light"
-                  to={`/profiles/${rant.rantAuthor}`}
+                  to={`/rants/${rant._id}`}
                 >
-                  {rant.rantAuthor} <br />
-                  <span style={{ fontSize: '1rem' }}>
-                    had this rant on {rant.createdAt}
+                  <span styles={{fontSize: '2.5rem'}}>
+                  {rant.rantAuthor} <br /> 
+                  <span style={{fontSize: '1rem'}}>
+                    Company:{rant.company} <br />
+                  <span style={{ fontSize: '0.85rem' }}>
+                     had this rant on {rant.createdAt}
+                  </span>
+                  </span>
                   </span>
                 </Link>
               ) : (
@@ -38,6 +43,7 @@ const RantList = ({
             </h4>
             <div className="card-body bg-light p-2">
               <p>{rant.rantText}</p>
+              {/* <p>{rant.company}</p> */}
             </div>
             <section className='d-flex flex-row' style={{justifyContent: "space-between"}}>
               <div>
