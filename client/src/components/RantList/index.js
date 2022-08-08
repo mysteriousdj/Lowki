@@ -39,12 +39,21 @@ const RantList = ({
             <div className="card-body bg-light p-2">
               <p>{rant.rantText}</p>
             </div>
+            <section className='d-flex flex-row justify-content-around w-100'>
+              <div style={{ margin: "5px"}}>
+                <i className='fa-regular fa-thumbs-down'></i>
+                <i className='fa-solid fa-thumbs-up'></i>
+              </div>
+
             <Link
-              className="btn btn-primary btn-block btn-squared"
+              className="btn btn-primary btn-squared"
               to={`/rants/${rant._id}`}
             >
               Comment
+              
+              
             </Link>
+            </section>
           </div>
         ))}
     </div>
