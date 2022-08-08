@@ -19,6 +19,9 @@ html {
  */
 body {
   margin: 0;
+  background-image:url("https://res.cloudinary.com/dbpaddidz/image/upload/v1659648640/FireBackground_ycwiyi.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /**
@@ -360,7 +363,7 @@ body {
     Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
   font-size: 16px;
-  color: #1a1a1a;
+  color: red;
 }
 
 h1,
