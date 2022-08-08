@@ -25,11 +25,13 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_RANT = gql`
-  mutation addRant($rantText: String!) {
-    addRant(rantText: $rantText) {
+  mutation addRant($rantText: String!, $companyText: String!) {
+    addRant(rantText: $rantText, companyText: $companyText) {
       _id
       rantText
       rantAuthor
+      # added company
+      company 
       createdAt
       comments {
         _id
@@ -45,6 +47,8 @@ export const ADD_COMMENT = gql`
       _id
       rantText
       rantAuthor
+      #added company
+      company
       createdAt
       comments {
         _id
