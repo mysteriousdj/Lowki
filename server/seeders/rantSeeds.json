@@ -11,46 +11,82 @@
   {
     "rantText": "I tried switching my role, but because of my proclaimed 'lack of experience' and me having too much initiative (which is apparently a turn-off for them), it is their justification that I am not enough.",
     "rantAuthor": "baka",
-    "company" : "Coffee Bean"
+    "company" : "Coffee Bean",
+    "comments": [{
+      "commentText": "bruhh when jobs require the 5 year experience after graduating university.. its UNREAL.",
+      "commentAuthor": "ihatechipotle"
+    }]
   },
   {
     "rantText": "So TIL that there are four people at my job that hold the same position as I do with the same certifications and same title, all with less experience, that make $3-$5 more an hour than I do.",
     "rantAuthor": "Why The Lucky Stiff",
-    "company" : "McDonalds"
+    "company" : "McDonalds",
+    "comments": [{
+        "commentText": "fr fr thats so unfair... ",
+        "commentAuthor": "baka"
+    }]
   },
   {
     "rantText": "When I first started, the next newest person had been there almost 2 years. We now have an average turnover rate of a couple months.",
     "rantAuthor": "daisydukes",
-    "company" : "Lush"
+    "company" : "Lush",
+    "comments": [{
+      "commentText": "what the.....",
+      "commentAuthor": "companysux"
+    }]
   },
   {
     "rantText": "I was called into a 2 hour meeting with the boss and assistant boss a few days ago to let me know they were completely changing up my job description, again, for the second time in as many months.",
     "rantAuthor": "susurus",
-    "company" : "Forever21"
+    "company" : "Forever21",
+    "comments": [{
+      "commentText": "no shot... thats messed up.. you literally got hired based on their job description the first time...",
+      "commentAuthor": "wagecuck"
+    }]
   },
   {
     "rantText": "I think my supervisor has given up because they had never really tried to engage with me since I have been their employee.",
     "rantAuthor": "fuddyduddy",
-    "company": "Ulta"
+    "company": "Ulta",
+    "comments": [{
+      "commentText": "??? they gave up? they should just give up their position at that point",
+      "commentAuthor": "susurus"
+    }]
   },
   {
     "rantText": "I am not working off the clock, i refuse!!! I only do 'things' for work when I am being paid!!!",
     "rantAuthor": "wagecuck",
-    "company": "Sushi Enya"
+    "company": "Sushi Enya",
+    "comments": [{
+      "commentText": "fr if i had to work off the clock, i would just clock back in for overtime. if they threaten to fire me for it, I will complain to department of labor.",
+      "commentAuthor": "stressin"
+    }]
   },
   {
     "rantText": "I want a different job for mental health's sake, but I live in a rural area and theres not that many of the jobs in my field around here.",
     "rantAuthor": "stressin",
-    "company": "Sprint"
+    "company": "Sprint",
+    "comments": [{
+      "commentText": "that really sucks.. i hope that you are able to find a different job or move to a different city to relieve that stress.",
+      "commentAuthor": "daisydukes"
+    }]
   },
   {
     "rantText": "Every project, every task feels pulled out of no where and I get the brunt of it.",
     "rantAuthor": "companysux",
-    "company": "Mejuri"
+    "company": "Mejuri",
+    "comments": [{
+      "commentText": "I love it when companies dont care about your health and just give you any tasks believing that you can complete them while doing 40 other tasks they gave you... literally soooo dumb",
+      "commentAuthor": "Lernantino"
+    }]
   },
   {
     "rantText": "I just think it's so messed up when they see you are struggling with mental health because there are so severe issues in your life, but they still tell you they are not getting the energy they wanted from you.",
     "rantAuthor": "Lernantino",
-    "company": "Little Caesar"
+    "company": "Little Caesar",
+    "comments": [{
+      "commentText": "fr fr if only companies cared",
+      "commentAuthor": "companysux"
+    }]
   }
 ]
