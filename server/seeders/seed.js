@@ -2,8 +2,7 @@ const db = require('../config/connection');
 const { User, Rant } = require('../models');
 const userSeeds = require('./userSeeds.json');
 const rantSeeds = require('./rantSeeds.json');
-//added commentSeeds -jess
-const commentSeeds = require('./commentSeeds.json');
+
 
 db.once('open', async () => {
   try {
