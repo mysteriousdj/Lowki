@@ -41,10 +41,10 @@ const RantList = ({
             </div>
             <section className='d-flex flex-row' style={{justifyContent: "space-between"}}>
               <div>
-                <button>
+                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "Dislike">
                   <i className='fa-regular fa-thumbs-down m-2'></i>
                 </button>
-                <button>
+                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "like">
                   <i className='fa-solid fa-thumbs-up m-2'></i>
                 </button>
                   
