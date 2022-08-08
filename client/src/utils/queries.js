@@ -6,6 +6,7 @@ export const QUERY_USER = gql`
       _id
       username
       email
+      profilePic
       rants {
         _id
         rantText
@@ -51,6 +52,7 @@ export const QUERY_ME = gql`
       _id
       username
       email
+      profilePic
       rants {
         _id
         rantText
