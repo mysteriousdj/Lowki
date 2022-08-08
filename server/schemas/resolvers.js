@@ -53,6 +53,8 @@ const resolvers = {
         const rant = await Rant.create({
           rantText,
           rantAuthor: context.user.username,
+          // added company -jess
+          company,
         });
 
         await User.findOneAndUpdate(
