@@ -6,6 +6,7 @@ export const QUERY_USER = gql`
       _id
       username
       email
+      profilePic
       rants {
         _id
         rantText
@@ -21,6 +22,7 @@ export const QUERY_RANTS = gql`
       _id
       rantText
       rantAuthor
+      company
       createdAt
     }
   }
@@ -32,6 +34,7 @@ export const QUERY_SINGLE_RANT = gql`
       _id
       rantText
       rantAuthor
+      company
       createdAt
       comments {
         _id
@@ -49,6 +52,7 @@ export const QUERY_ME = gql`
       _id
       username
       email
+      profilePic
       rants {
         _id
         rantText

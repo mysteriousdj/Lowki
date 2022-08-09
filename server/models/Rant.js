@@ -19,6 +19,12 @@ const rantSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
+  // added company, for users to input the company they worked at -jess
+  company: {
+    type: String,
+    required: 'Must put a company name!',
+    trim: true,
+  },
   comments: [
     {
       commentText: {
