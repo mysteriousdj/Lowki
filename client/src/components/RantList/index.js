@@ -44,9 +44,13 @@ const RantList = ({
                 <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "Dislike">
                   <i className='fa-regular fa-thumbs-down m-2'></i>
                 </button>
+                <input type= "number" id="input1" value= "0">
+                </input>
+                
                 <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "like">
                   <i className='fa-solid fa-thumbs-up m-2'></i>
                 </button>
+                <input type= "number" value= "0" id="input2"></input>
                   
                 
                 
