@@ -19,7 +19,7 @@ const Home = () => {
         >
           <RantForm />
         </div>
-        <div className="col-12 col-md-12 mb-3 bg-light" style={{borderRadius: "12px", width: "100%"}}>
+        <div className="col-12 col-md-12 mb-3 pt-3 bg-light" style={{borderRadius: "12px", width: "100%"}}>
           {loading ? (
             <div>Loading...</div>
           ) : (
