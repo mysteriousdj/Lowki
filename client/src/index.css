@@ -1726,12 +1726,15 @@ label form [type='radio'] {
 }
 
 .voting {
+  display: flex;
+  flex-direction: row;
 
 }
 
 
 #input1 {
-width: 40px;
+padding-left: 5px;
+width: 18px;
 border: none;
 background: none;
 color: #919191;
@@ -1741,6 +1744,7 @@ pointer-events: none;
 }
 
 #input2 {
+  padding-left: 5px;
   width: 40px;
   border: none;
   background: none;
