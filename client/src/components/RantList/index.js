@@ -40,17 +40,17 @@ const RantList = ({
               <p>{rant.rantText}</p>
             </div>
             <section className='d-flex flex-row' style={{justifyContent: "space-between"}}>
-              <div>
-                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "Dislike">
+              <div class="voting">
+                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "Dislike" id="likebtn">
                   <i className='fa-regular fa-thumbs-down m-2'></i>
                 </button>
                 <input type= "number" id="input1" value= "0">
                 </input>
                 
-                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "like">
+                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "like" id="dislikebtn">
                   <i className='fa-solid fa-thumbs-up m-2'></i>
                 </button>
-                <input type= "number" value= "0" id="input2"></input>
+                <input type= "number" id="input2" value= "0" ></input>
                   
                 
                 
