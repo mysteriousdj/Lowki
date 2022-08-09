@@ -19,6 +19,10 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  profilePic: {
+    type: String,
+    allowNull: false,
+  },
   rants: [
     {
       type: Schema.Types.ObjectId,

@@ -2,51 +2,61 @@
   {
     "username": "ihatechipotle",
     "email": "bkernighan@techfriends.dev",
-    "password": "password01"
+    "password": "password01",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659984951/elmoprofile_pic_tsfvby.jpg"
   },
   {
     "username": "baka",
     "email": "mkanatalexander@techfriends.dev",
-    "password": "password02"
+    "password": "password02",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985555/squidward_vijt65.jpg"
   },
   {
     "username": "Why The Lucky Stiff",
     "email": "wtls@techfriends.dev",
-    "password": "password03"
+    "password": "password03",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985555/winniethepooh_inly6y.jpg"
   },
   {
     "username": "daisydukes",
     "email": "kbeck@techfriends.dev",
-    "password": "password04"
+    "password": "password04",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985555/spiderman3_fg72s3.jpg"
   },
   {
     "username": "susurus",
     "email": "evberard@techfriends.dev",
-    "password": "password05"
+    "password": "password05",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985555/jerry_hokrxr.jpg"
   },
   {
     "username": "fuddyduddy",
     "email": "akay@techfriends.dev",
-    "password": "password06"
+    "password": "password06",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985556/evilkermit_aji5hb.jpg"
   },
   {
     "username": "wagecuck",
     "email": "choare@techfriends.dev",
-    "password": "password07"
+    "password": "password07",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985556/pepe_u2dwpl.png"
   },
   {
     "username": "stressin",
     "email": "dthomas@techfriends.dev",
-    "password": "password08"
+    "password": "password08",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985556/TravisScott_kzbjvq.gif"
   },
   {
     "username": "comapanysux",
     "email": "dknuth@techfriends.dev",
-    "password": "password09"
+    "password": "password09",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985556/YoTodaLaNoche_kn2mou.png"
   },
   {
     "username": "Lernantino",
     "email": "lernantino@techfriends.dev",
-    "password": "password10"
+    "password": "password10",
+    "profilePic":"https://res.cloudinary.com/dbpaddidz/image/upload/v1659985556/WolfOfWallStreet_umzt5c.jpg"
   }
 ]

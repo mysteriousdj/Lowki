@@ -10,10 +10,11 @@ import Auth from '../../utils/auth';
 const RantForm = () => {
   const [rantText, setRantText] = useState('');
 
-  const [characterCount, setCharacterCount] = useState(0);
 
   const [addRant, { error }] = useMutation(ADD_RANT);
-    
+  
+  //added -jess
+  const [companyText,setCompanyText] = useState('');
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -22,6 +23,7 @@ const RantForm = () => {
       const { data } = await addRant({
         variables: {
           rantText,
+          companyText, // added -jess
           rantAuthor: Auth.getProfile().data.username,
         },
       });
@@ -36,9 +38,11 @@ const RantForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'rantText' && value.length <= 280) {
+    if (name === 'rantText') {
       setRantText(value);
-      setCharacterCount(value.length);
+    }else if (name === 'companyText'){
+      setCompanyText(value);
+     
     }
   };
 
@@ -48,17 +52,20 @@ const RantForm = () => {
 
       {Auth.loggedIn() ? (
         <>
-          <p
-            className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
-            }`}
-          >
-            Character Count: {characterCount}/280
-          </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
           >
+            <div className="col-12 col-lg-9"> 
+              <textarea
+                name="companyText"
+                placeholder="Add company name"
+                value={companyText}
+                className="form-input w-100"
+                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                onChange={handleChange}
+              ></textarea>
+            </div>
             <div className="col-12 col-lg-9">
               <textarea
                 name="rantText"

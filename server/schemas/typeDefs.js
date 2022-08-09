@@ -6,6 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    profilePic: String
     rants: [Rant]!
   }
 
@@ -13,6 +14,7 @@ const typeDefs = gql`
     _id: ID
     rantText: String
     rantAuthor: String
+    company: String
     createdAt: String
     comments: [Comment]!
   }
@@ -33,14 +35,14 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     rants(username: String): [Rant]
-    rant(RantId: ID!): Rant
+    rant(rantId: ID!): Rant
     me: User
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addRant(rantText: String!): Rant
+    addRant(rantText: String!, companyText:String!): Rant
     addComment(rantId: ID!, commentText: String!): Rant
     removeRant(rantId: ID!): Rant
     removeComment(rantId: ID!, commentId: ID!): Rant
