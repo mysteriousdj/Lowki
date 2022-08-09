@@ -74,9 +74,6 @@ const RantList = ({
               
             </Link>
             </section>
-            <script type='text/javascript'>
-                let likebtn = doc
-            </script>
           </div>
           
         ))}
