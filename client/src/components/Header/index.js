@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container flex-row justify-space-between align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0">Lowki</h1>
+            <h1 className="m-0" style={{fontFamily: "emoji"}}>Lowki</h1>
           </Link>
           <p className="m-0">You say it, we post it.</p>
         </div>
