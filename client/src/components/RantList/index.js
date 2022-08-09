@@ -19,7 +19,7 @@ const RantList = ({
       {showTitle && <h3>{title}</h3>}
       {rants &&
         rants.map((rant) => (
-          <div key={rant._id} className="card mb-3">
+          <div key={rant._id} className="card mb-3 pb-2">
             <h4 className="card-header bg-primary text-light p-2 m-0">
               {showUsername ? (
                 <Link
@@ -46,7 +46,6 @@ const RantList = ({
             </h4>
             <div className="card-body bg-light p-2">
               <p>{rant.rantText}</p>
-              {/* <p>{rant.company}</p> */}
             </div>
             <section className='d-flex flex-row' style={{justifyContent: "space-between"}}>
               <div class="voting">
@@ -55,23 +54,16 @@ const RantList = ({
                 </button>
                 <p id="input1" >{downVote}
                 </p>
-                
                 <button onClick={() => setUpVote(upVote + 1)} type= "button" data-toggle= "tooltip" data-placement= "top" title= "like">
                   <i className='fa-solid fa-thumbs-up m-2'></i>
                 </button>
                 <p id="input2">{upVote}</p>
-                  
-                
-                
               </div>
-
             <Link
-              className="btn btn-primary btn-squared"
+              className="btn btn-primary btn-squared align-middle"
               to={`/rants/${rant._id}`}
             >
               Comment
-              
-              
             </Link>
             </section>
           </div>

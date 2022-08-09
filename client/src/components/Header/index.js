@@ -11,7 +11,7 @@ const Header = () => {
   };
   return (
     <header className="bg-primary text-light mb-4 flex-row align-center" style={{maxHeight: "100px"}}>
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+      <div className="container flex-row justify-space-between align-center">
         <div>
           <Link className="text-light" to="/">
             <h1 className="m-0">Lowki</h1>
