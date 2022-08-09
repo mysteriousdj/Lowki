@@ -42,7 +42,6 @@ const RantForm = () => {
       setRantText(value);
     }else if (name === 'companyText'){
       setCompanyText(value);
-     
     }
   };
 
@@ -57,14 +56,14 @@ const RantForm = () => {
             onSubmit={handleFormSubmit}
           >
             <div className="col-12 col-lg-9"> 
-              <textarea
+              <input
                 name="companyText"
                 placeholder="Add company name"
                 value={companyText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
-              ></textarea>
+              ></input>
             </div>
             <div className="col-12 col-lg-9">
               <textarea
@@ -78,7 +77,7 @@ const RantForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button className="btn btn-primary btn-block py-3" type="submit" style={{borderRadius: "12px"}}>
                 Add Rant
               </button>
             </div>

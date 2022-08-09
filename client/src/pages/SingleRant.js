@@ -48,7 +48,7 @@ const SingleRant = () => {
       <div className="my-5">
         <CommentList comments={rant.comments} />
       </div>
-      <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+      <div className=" p-4 bg-light" style={{ border: '1px dotted #1a1a1a', borderRadius: "12px" }}>
         <CommentForm rantId={rant._id} />
       </div>
     </div>
