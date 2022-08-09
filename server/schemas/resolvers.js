@@ -48,13 +48,13 @@ const resolvers = {
 
       return { token, user };
     },
-    addRant: async (parent, { rantText }, context) => {
+    addRant: async (parent, { rantText, companyText }, context) => {
       if (context.user) {
         const rant = await Rant.create({
           rantText,
           rantAuthor: context.user.username,
           // added company -jess
-          company,
+          company: companyText,
         });
 
         await User.findOneAndUpdate(
