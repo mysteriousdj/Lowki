@@ -1050,6 +1050,7 @@ a:hover {
 .btn.btn-info {
   background-color: #d00000 ;
   color: #ffffff;
+  align-items: center;
 }
 
 .btn.btn-info:hover {
