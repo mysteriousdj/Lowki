@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 const RantList = ({
@@ -7,9 +7,12 @@ const RantList = ({
   showTitle = true,
   showUsername = true,
 }) => {
+  const [upVote, setUpVote] = useState(0);
+  const [downVote, setDownVote] = useState(0);
   if (!rants.length) {
     return <h3>No rants Yet</h3>;
   }
+  
 
   return (
     <div>
@@ -46,13 +49,17 @@ const RantList = ({
               {/* <p>{rant.company}</p> */}
             </div>
             <section className='d-flex flex-row' style={{justifyContent: "space-between"}}>
-              <div>
-                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "Dislike">
+              <div class="voting">
+                <button onClick={() => setDownVote(downVote + 1)} type= "button" data-toggle= "tooltip" data-placement= "top" title= "Dislike">
                   <i className='fa-regular fa-thumbs-down m-2'></i>
                 </button>
-                <button type= "button" data-toggle= "tooltip" data-placement= "top" title= "like">
+                <p id="input1" >{downVote}
+                </p>
+                
+                <button onClick={() => setUpVote(upVote + 1)} type= "button" data-toggle= "tooltip" data-placement= "top" title= "like">
                   <i className='fa-solid fa-thumbs-up m-2'></i>
                 </button>
+                <p id="input2">{upVote}</p>
                   
                 
                 
@@ -68,8 +75,10 @@ const RantList = ({
             </Link>
             </section>
           </div>
+          
         ))}
     </div>
+    
   );
 };
 
