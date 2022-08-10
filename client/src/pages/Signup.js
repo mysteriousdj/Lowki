@@ -88,7 +88,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                  <ReCAPTCHA
-                  sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
+                  sitekey="6LfGN2EhAAAAAHrQDnwu5sYSZzyaYRfmflVDfQwU"
                   onChange={onChange}
                    />
                 {isAuthenticated && <button
