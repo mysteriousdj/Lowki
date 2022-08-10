@@ -6,11 +6,11 @@ Lowki is a web application that allows users to have a safe space to rant about 
 
 ## The Look
 
-![alt text](add in the file paths for the img)
+![alt text](/client/public/Homepage.png)
 
 ## Demo
 
-![alt text]()
+![alt text](/client/public/demo.gif)
 
 ## Links
 
