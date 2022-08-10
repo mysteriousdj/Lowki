@@ -83,7 +83,7 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
                 <ReCAPTCHA
-                  sitekey="6LfGN2EhAAAAAHrQDnwu5sYSZzyaYRfmflVDfQwU"
+                  sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
                   onChange={onChange}
                 />
                 {isAuthenticated && <button
