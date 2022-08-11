@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from 'react-router-dom';
 
 import { useMutation } from '@apollo/client';
@@ -14,7 +14,7 @@ const Signup = () => {
     password: '',
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
-  const [isAuthenticated, setIsAuthenticated] = useState(null);
+  // const [isAuthenticated, setIsAuthenticated] = useState(null);
   
 
   const handleChange = (event) => {
@@ -26,14 +26,14 @@ const Signup = () => {
     });
   };
   /////////////////////////////////////
-  const onChange = (value) => {
-    console.log(value);
-    if (value !== null) {
-      setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(null);
-    }
-  }
+  // const onChange = (value) => {
+  //   console.log(value);
+  //   if (value !== null) {
+  //     setIsAuthenticated(true);
+  //   } else {
+  //     setIsAuthenticated(null);
+  //   }
+  // }
 //////////////////////////////////
   const handleFormSubmit = async (event) => {
     event.preventDefault();
