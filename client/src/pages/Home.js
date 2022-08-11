@@ -17,6 +17,15 @@ const Home = () => {
           className="col-12 col-md-12 mb-3 p-3 bg-light"
           style={{ border: '1px dotted #1a1a1a', borderRadius: "12px"}}
         >
+          {/* <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeVumkhAAAAAG24AwqcdyOMR1vmFEgvQ7_shrV-"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6LeVumkhAAAAAG24AwqcdyOMR1vmFEgvQ7_shrV-', {action: 'login'}).then(function(token) {
+       
+    })
+});
+
+</script> */}
           <RantForm />
         </div>
         <div className="col-12 col-md-12 mb-3 pt-3 bg-light" style={{borderRadius: "12px", width: "100%"}}>
