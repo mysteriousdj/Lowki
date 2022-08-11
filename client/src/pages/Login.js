@@ -86,7 +86,7 @@ const Login = (props) => {
                   sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
                   onChange={onChange} */}
                 {/* /> */}
-                {isAuthenticated && <button
+                {/*isAuthenticated && */ <button
                   className="btn btn-block btn-primary"
                   style={{ cursor: 'pointer' }}
                   type="submit"
