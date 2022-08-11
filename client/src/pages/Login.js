@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 
-import Auth from '../utils/auth';
+// import Auth from '../utils/auth';
 
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  const [isAuthenticated, setIsAuthenticated] = useState(null);
+  // const [isAuthenticated, setIsAuthenticated] = useState(null);
 
 
   const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -23,15 +23,15 @@ const Login = (props) => {
       [name]: value,
     });
   };
-  const onChange = (value) => {
-    console.log(value);
-    if (value !== null) {
-      setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(null);
-    }
+  // const onChange = (value) => {
+  //   console.log(value);
+  //   if (value !== null) {
+  //     setIsAuthenticated(true);
+  //   } else {
+  //     setIsAuthenticated(null);
+  //   }
 
-  }
+  // }
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -41,7 +41,7 @@ const Login = (props) => {
         variables: { ...formState },
       });
 
-      Auth.login(data.login.token);
+    //   Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
     }
