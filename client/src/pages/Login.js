@@ -82,10 +82,10 @@ const Login = (props) => {
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <ReCAPTCHA
+                {/* <ReCAPTCHA
                   sitekey="6Ldwd0ohAAAAAKgKu2N4wFRA5fnLBLtkeALG-e5Q"
-                  onChange={onChange}
-                />
+                  onChange={onChange} */}
+                {/* /> */}
                 {isAuthenticated && <button
                   className="btn btn-block btn-primary"
                   style={{ cursor: 'pointer' }}
