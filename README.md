@@ -14,7 +14,8 @@ Lowki is a web application that allows users to have a safe space to rant about 
 
 ## Pre-Planning
 
-[Download or View the PDF Document containing the pre planning document](Lowki.pdf)
+The PDF Document containing the pre planning plans will be linked below.
+[Download or View the PDF Document](Lowki.pdf)
 
 ## Links
 
