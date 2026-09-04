@@ -12,9 +12,11 @@ Lowki is a web application that allows users to have a safe space to rant about 
 
 ![alt text](/client/public/demo.gif)
 
+## Pre-Planning
+
+<a href="/pdfs/Lowki.pdf" class="image fit"><img src="images/Lowki.jpg" alt=""></a>
+
 ## Links
 
 Project is uploded to [Github](https://github.com/) at the following [repository.](https://github.com/mysteriousdj/Lowki)
-
-Access to [Webpage.](add the link to webpage)
 
