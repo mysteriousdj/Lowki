@@ -14,7 +14,7 @@ Lowki is a web application that allows users to have a safe space to rant about 
 
 ## Pre-Planning
 
-<object data="Lowki.pdf" width="1000" height="1000" type='application/pdf'/>
+[Download or View the PDF Document](Lowki.pdf)
 
 ## Links
 
